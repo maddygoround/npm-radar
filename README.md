@@ -1,29 +1,53 @@
-# Package Checker CLI
+# npm-radar
 
-A professional tool to identify recently updated dependencies in your Node.js projects.
+A CLI tool to identify recently updated dependencies in your Node.js projects.
 
 ## Installation
 
 ```bash
-npm install -g @yourusername/package-checker
+npm install -g @maddygoround/npm-radar
 ```
 
 ## Usage
 
 ```bash
-package-checker [path/to/package.json]
+npm-radar [path/to/package.json]
 ```
 
 ## Examples
 
 Check current directory's package.json:
 ```bash
-package-checker
+npm-radar
 ```
 
 Check specific package.json:
 ```bash
-package-checker ./path/to/package.json
+npm-radar ./path/to/package.json
+```
+
+## Features
+
+- Scans both dependencies and devDependencies
+- Shows packages updated in the last 2 months
+- Displays current and latest versions
+- Handles errors gracefully
+
+## Development
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run in development mode:
+```bash
+npm run dev
+```
+
+3. Build for production:
+```bash
+npm run build
 ```
 
 ## Publishing
