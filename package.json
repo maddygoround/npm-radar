@@ -1,0 +1,40 @@
+{
+  "name": "@maddygoround/npm-radar",
+  "version": "1.0.0",
+  "description": "CLI tool to find recently updated NPM packages in your project",
+  "bin": {
+    "npm-radar": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "prepublish": "npm run build",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "undici": "^5.26.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/commander": "^2.12.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "npm",
+    "cli",
+    "package",
+    "updates",
+    "security"
+  ],
+  "license": "MIT"
+}
